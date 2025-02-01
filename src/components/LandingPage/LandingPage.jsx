@@ -7,12 +7,15 @@ const LandingPage = () => {
                 {["WE CREATE", "EYE OPENING", "PRESENTATIONS"].map((items, index) => {
                     return (
                         <div className="masker" key={index}>
-                            <h1 className="text-8xl leading-[6vw] tracking-tighter">{items}</h1>
+                            <div className="w-fit flex">
+                                {index === 1 && (<div className="w-[9vw] h-[5vw] rounded-2xl relative top-[1.2vw] bg-red-500"></div>)}
+                                <h1 className="text-8xl leading-[7vw] tracking-tighter">{items}</h1>
+                            </div>
                         </div>
                     )
                 })}
             </div>
-            <div className="border-t-[1px] mt-35 flex justify-between items-center py-5 px-20 border-zinc-700">
+            <div className="border-t-[1px] mt-25 flex justify-between items-center py-5 px-20 border-zinc-700">
                 {["For public and private companies", "From the first pitch to IPO"].map((items, index) => {
                     return <p className="text-md leading-none font-light tracking-tight" key={index}>{items}</p>
                 })}
