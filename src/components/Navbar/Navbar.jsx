@@ -1,5 +1,3 @@
-// import React from 'react'
-
 const Navbar = () => {
   return (
     <div className="w-full fixed z-[999] px-20 flex justify-between items-center py-8">
